@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  overflow: hidden;
+  background-image: url(./images/wallpaper2you_446331.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#main_head{
+  font-size: 1.7rem;
+  color: rgb(221, 17, 95);
+  text-shadow:0px 0px 3px rgb(35, 20, 238), 0px 0px 2px rgb(35, 20, 238);
+}
+
+.keys{
+    border-top: 2px solid rgba(219, 219, 219, 0.5);
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(3px);
+    padding: 70px;
+    overflow: hidden;
+    box-shadow: 10px 20px 30px rgba(20, 19, 19, 0.8);
+    border-radius: 20px;  
+}
+
+button{
+    height: 28vh;
+    width:50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;    
+}
+
+button:nth-of-type(even){
+  background-color: black;
+  color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+  transform: scale(0.98);
+  box-shadow: 0px 0px 15px rgba(218, 235, 62, 0.5), 0px 0px 15px rgba(235, 232, 62, 0.5);
+}
+
+button.activated {
+  box-shadow: 0px 0px 15px rgba(224, 235, 62, 0.5), 0px 0px 15px rgba(224, 235, 62, 0.5);
+}
+
+
+#main_footer{
+  font-style: italic;
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width : 800px){
+  .keys{
+    padding: 40px;
+  }
+}
+
+@media (max-width : 400px){
+  .keys{
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px;
+    margin: 10px;
+  }
+  button{
+    height: 28vh;
+    width:25px;
+    margin: 5px;
+    
+  }
+}
